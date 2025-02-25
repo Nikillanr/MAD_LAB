@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="20dp"
+    android:orientation="vertical"
+    android:gravity="center">
+
+    <!-- Source Spinner -->
+    <TextView android:text="Select Source" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+    <Spinner android:id="@+id/spinnerSource" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+
+    <!-- Destination Spinner -->
+    <TextView android:text="Select Destination" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+    <Spinner android:id="@+id/spinnerDestination" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+
+    <!-- Date Picker Button -->
+    <TextView android:text="Select Travel Date" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+    <Button android:id="@+id/btnDatePicker" android:text="Select Date" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+
+    <!-- Display Selected Date -->
+    <TextView android:id="@+id/tvSelectedDate" android:text="No date selected" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+
+    <!-- Toggle Button for Ticket Type -->
+    <ToggleButton android:id="@+id/toggleTicketType" android:textOn="Round Trip" android:textOff="One Way" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+
+    <!-- Submit and Reset Buttons -->
+    <Button android:id="@+id/btnSubmit" android:text="Submit" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    <Button android:id="@+id/btnReset" android:text="Reset" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+
+</LinearLayout>
